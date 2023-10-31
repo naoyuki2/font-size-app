@@ -13,14 +13,14 @@ const Timer = ({ onOpen }) => {
     if (timerId) return;
     const id = setInterval(() => {
       setTime((prevTime) => {
-        if (prevTime <= 10) {
+        if (prevTime <= 100) {
           clearInterval(id);
           // onOpen(); // ここから移動
         } else {
-          return prevTime - 10;
+          return prevTime - 100;
         }
       });
-    }, 10);
+    }, 100);
     setTimerId(id);
   };
 
@@ -33,7 +33,7 @@ const Timer = ({ onOpen }) => {
 
   // レンダリング後にonOpenを呼び出す
   useEffect(() => {
-    if (time <= 10) {
+    if (time <= 1000) {
       onOpen();
     }
   }, [time]);
