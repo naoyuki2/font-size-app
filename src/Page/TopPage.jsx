@@ -6,15 +6,15 @@ export const TopPage = () => {
   return (
     <>
       <Stack spacing={20}>
-        <Text fontSize="6xl">フォントサイズ</Text>
+        <Text fontSize="6xl">Font Size</Text>
         <Link to="/game">
           <Button colorScheme="teal" size="lg">
-            スタート
+            start
           </Button>
         </Link>
         <Link to="/setting">
           <Button colorScheme="teal" size="lg">
-            設定画面へ
+            setting
           </Button>
         </Link>
       </Stack>

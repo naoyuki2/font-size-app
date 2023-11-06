@@ -33,7 +33,7 @@ const Timer = ({ onOpen }) => {
 
   // レンダリング後にonOpenを呼び出す
   useEffect(() => {
-    if (time <= 1000) {
+    if (time <= 100) {
       onOpen();
     }
   }, [time]);
